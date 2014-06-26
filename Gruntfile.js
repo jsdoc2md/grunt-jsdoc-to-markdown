@@ -17,8 +17,8 @@ module.exports = function(grunt) {
                 options: {
                     index: true
                 },
-                src: "test/fixture/*.js",
-                dest: "tmp/docs.md"
+                src: "test/fixture/object.js",
+                dest: "tmp/with-index.md"
             }
         }
     });
