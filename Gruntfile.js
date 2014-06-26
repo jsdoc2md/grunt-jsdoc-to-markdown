@@ -3,11 +3,11 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         jsdoc2md: {
-            oneFile: {
+            oneOutputFile: {
                 src: "test/fixture/*.js",
                 dest: "tmp/docs.md"
             },
-            separateFiles: {
+            separateOutputFiles: {
                 files: [
                     { src: "test/fixture/class.js", dest: "tmp/class.md" },
                     { src: "test/fixture/typedef.js", dest: "tmp/typedef.md" }

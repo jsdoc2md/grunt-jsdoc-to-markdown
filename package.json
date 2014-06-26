@@ -1,13 +1,9 @@
 {
   "name": "grunt-jsdoc-to-markdown",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "0.0.0",
-  "description": "API documentation generator, ideal for Github projects",
+  "version": "0.1.0",
+  "description": "Markdown API documentation generator, ideal for Github projects",
   "repository": "https://github.com/75lb/grunt-jsdoc-to-markdown.git",
-  "main": "./lib/grunt-jsdoc-to-markdown.js",
-  "bin": {
-    "grunt-jsdoc-to-markdown": "bin/cli.js"
-  },
   "keywords": [
     "gruntplugin"
   ],
@@ -18,9 +14,7 @@
     "grunt": "~0.4.5"
   },
   "scripts": {
-    "test": "tape test/*.js",
-    "lint": "jshint lib/*.js bin/*.js test/*.js; echo",
-    "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
+    "lint": "jshint tasks/*.js Gruntfile.js; echo"
   },
   "devDependencies": {
     "grunt": "^0.4.5"
