@@ -20,21 +20,21 @@ module.exports = function(grunt) {
     grunt.initConfig({
         jsdoc2md: {
             oneOutputFile: {
-                src: "test/fixture/*.js",
-                dest: "tmp/docs.md"
+                src: "src/*.js",
+                dest: "api/documentation.md"
             },
             separateOutputFilePerInput: {
                 files: [
-                    { src: "test/fixture/class.js", dest: "tmp/class.md" },
-                    { src: "test/fixture/typedef.js", dest: "tmp/typedef.md" }
+                    { src: "src/jacket.js", dest: "api/jacket.md" },
+                    { src: "src/shirt.js", dest: "api/shirt.md" }
                 ]
             },
             withOptions: {
                 options: {
                     index: true
                 },
-                src: "test/fixture/object.js",
-                dest: "tmp/with-index.md"
+                src: "src/wardrobe.js",
+                dest: "api/with-index.md"
             }
         }
     });
