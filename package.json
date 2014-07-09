@@ -20,6 +20,6 @@
     "grunt": "^0.4.5"
   },
   "dependencies": {
-    "jsdoc-to-markdown": "^0.2.18"
+    "jsdoc-to-markdown": "^0.3"
   }
 }
