@@ -1,5 +1,6 @@
 "use strict";
-var jsdoc2md = require("jsdoc-to-markdown");
+var jsdoc2md = require("jsdoc-to-markdown"),
+    fs = require("fs");
 
 module.exports = function(grunt) {
 
@@ -16,14 +17,14 @@ module.exports = function(grunt) {
     };
 
     this.files.forEach(function(file){
-        options.src = file.src;
         var outputPath = file.dest;
-        jsdoc2md.render(options, function(err, result){
-            if (err) grunt.fail.fatal(err);
-            grunt.file.write(outputPath, result);
-            grunt.log.oklns(result.length + " bytes written to " + outputPath);
+        var renderStream = jsdoc2md.render(file.src, options);
+        grunt.log.oklns("writing " + outputPath);
+        renderStream.on("error", grunt.fail.fatal);
+        renderStream.on("end", function(){
             monitor.done();
         });
+        renderStream.pipe(fs.createWriteStream(outputPath));
     });
   });
 
