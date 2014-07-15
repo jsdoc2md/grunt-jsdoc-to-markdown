@@ -14,12 +14,14 @@
     "grunt": "~0.4.5"
   },
   "scripts": {
-    "lint": "jshint tasks/*.js Gruntfile.js; echo"
+    "lint": "jshint tasks/*.js Gruntfile.js; echo",
+    "test": "tape test/*.js"
   },
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "tape": "^2.13.3"
   },
   "dependencies": {
-    "jsdoc-to-markdown": "^0.4"
+    "jsdoc-to-markdown": "^0.5"
   }
 }
