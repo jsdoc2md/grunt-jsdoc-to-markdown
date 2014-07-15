@@ -23,6 +23,7 @@
     "tape": "^2.13.3"
   },
   "dependencies": {
-    "jsdoc-to-markdown": "^0.5"
+    "jsdoc-to-markdown": "^0.5",
+    "more-fs": "^0.5.0"
   }
 }

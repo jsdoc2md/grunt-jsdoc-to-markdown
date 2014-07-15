@@ -1,6 +1,6 @@
 "use strict";
 var jsdoc2md = require("jsdoc-to-markdown"),
-    fs = require("fs");
+    mfs = require("more-fs");
 
 module.exports = function(grunt) {
 
@@ -24,7 +24,8 @@ module.exports = function(grunt) {
         renderStream.on("end", function(){
             monitor.done();
         });
-        renderStream.pipe(fs.createWriteStream(outputPath));
+        
+        renderStream.pipe(mfs.writeStream(outputPath));
     });
   });
 
