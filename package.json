@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
     "tape": "^2.13.3"
   },
   "dependencies": {
