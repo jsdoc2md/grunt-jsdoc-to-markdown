@@ -7,10 +7,11 @@
 I am close to finishing the next version, so feedback is welcome at this point!
 
 Install the preview release:
-
+```sh
 $ npm install -g grunt-jsdoc-to-markdown@next
+```
 
-Any issues or feedback, let me know! 
+Try generating your docs using the preview plugin.. Any issues or feedback, let me know! 
 
 Anyway, back to the regular documentation:
 
