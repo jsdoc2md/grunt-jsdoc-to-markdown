@@ -7,7 +7,7 @@ test("run grunt", function(t){
     exec("grunt", function(err, stdout, stderr){
         if (err) throw err;
 
-        var output = fs.readFileSync("tmp/class.md", "utf8");
+        var output = fs.readFileSync("test/output/class.md", "utf8");
         t.ok(/a class with all of the things/.test(output));
     });
 });
