@@ -3,15 +3,26 @@
 [![Build Status](https://travis-ci.org/75lb/grunt-jsdoc-to-markdown.svg?branch=master)](https://travis-ci.org/75lb/grunt-jsdoc-to-markdown)
 [![Dependency Status](https://david-dm.org/75lb/grunt-jsdoc-to-markdown.svg)](https://david-dm.org/75lb/grunt-jsdoc-to-markdown)
 
-#grunt-jsdoc-to-markdown
+# New release preview!
+I am close to finishing the next version, so feedback is welcome at this point!
+
+Install the preview release:
+
+$ npm install -g grunt-jsdoc-to-markdown@next
+
+Any issues or feedback, let me know! 
+
+Anyway, back to the regular documentation:
+
+# grunt-jsdoc-to-markdown
 A grunt plugin for [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown).
 
-##Install
+## Install
 ```sh
 $ npm install grunt-jsdoc-to-markdown --save-dev
 ```
 
-##Usage
+## Usage
 Example `Gruntfile.js`:
 
 ```js
