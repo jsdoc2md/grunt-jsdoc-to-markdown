@@ -4,14 +4,7 @@
 [![Dependency Status](https://david-dm.org/75lb/grunt-jsdoc-to-markdown.svg)](https://david-dm.org/75lb/grunt-jsdoc-to-markdown)
 
 # New release preview!
-I am close to finishing the next version, so feedback is welcome at this point!
-
-Install the preview release:
-```sh
-$ npm install -g grunt-jsdoc-to-markdown@next
-```
-
-Try generating your docs using the preview plugin.. Any issues or feedback, let me know! 
+I am close to finishing the next version, so feedback is welcome at this point! See the [next](https://github.com/75lb/grunt-jsdoc-to-markdown/tree/next) branch for installation details..
 
 Anyway, back to the regular documentation:
 
