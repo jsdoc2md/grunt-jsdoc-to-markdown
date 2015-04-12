@@ -1,21 +1,17 @@
 [![view on npm](http://img.shields.io/npm/v/grunt-jsdoc-to-markdown.svg)](https://www.npmjs.org/package/grunt-jsdoc-to-markdown)
 [![npm module downloads per month](http://img.shields.io/npm/dm/grunt-jsdoc-to-markdown.svg)](https://www.npmjs.org/package/grunt-jsdoc-to-markdown)
-[![Build Status](https://travis-ci.org/75lb/grunt-jsdoc-to-markdown.svg?branch=next)](https://travis-ci.org/75lb/grunt-jsdoc-to-markdown)
-[![Dependency Status](https://david-dm.org/75lb/grunt-jsdoc-to-markdown.svg)](https://david-dm.org/75lb/grunt-jsdoc-to-markdown)
+[![Build Status](https://travis-ci.org/jsdoc2md/grunt-jsdoc-to-markdown.svg?branch=next)](https://travis-ci.org/jsdoc2md/grunt-jsdoc-to-markdown)
+[![Dependency Status](https://david-dm.org/jsdoc2md/grunt-jsdoc-to-markdown.svg)](https://david-dm.org/jsdoc2md/grunt-jsdoc-to-markdown)
 
-#grunt-jsdoc-to-markdown@next (preview release)
+# grunt-jsdoc-to-markdown
 A grunt plugin for [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown).
 
-This is a preview release for the next version so feedback is welcome at this point! 
-
-Try generating your docs using this preview plugin.. Any issues or feedback, let me know! 
-
-##Install
+## Install
 ```sh
-$ npm install grunt-jsdoc-to-markdown@next --save-dev
+$ npm install grunt-jsdoc-to-markdown --save-dev
 ```
 
-##Usage
+## Usage
 Example `Gruntfile.js`:
 
 ```js

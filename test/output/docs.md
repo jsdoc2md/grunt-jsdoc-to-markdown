@@ -29,7 +29,7 @@ simple object export
 
 * [object](#module_object)
   * [.one](#module_object.one)
-  * [.three(four, five)](#module_object.three) ⇒ <code>object</code> \| <code>string</code>
+  * [.three(four, five)](#module_object.three) ⇒ <code>object</code> &#124; <code>string</code>
 
 <a name="module_object.one"></a>
 ### object.one
@@ -37,11 +37,11 @@ first property
 
 **Kind**: static property of <code>[object](#module_object)</code>  
 <a name="module_object.three"></a>
-### object.three(four, five) ⇒ <code>object</code> \| <code>string</code>
+### object.three(four, five) ⇒ <code>object</code> &#124; <code>string</code>
 a function
 
 **Kind**: static method of <code>[object](#module_object)</code>  
-**Returns**: <code>object</code> \| <code>string</code> - this return has several types  
+**Returns**: <code>object</code> &#124; <code>string</code> - this return has several types  
 **Since**: v0.10.28  
 **Author:** Lloyd <75pound@gmail.com>  
 
@@ -60,8 +60,8 @@ allTogether(true);
 
 a class with all of the things
 
-**Extends:** <code>Number</code>  
 **Kind**: global class  
+**Extends:** <code>Number</code>  
 **Since**: v0.10.28  
 **Author:** 75lb <75pound@gmail.com>  
 
@@ -69,7 +69,7 @@ a class with all of the things
   * [new All(input, [options])](#new_All_new)
   * [.topping](#All#topping) : <code>string</code>
   * [.size](#All#size)
-  * ~~[.allThings(one, two)](#All#allThings) ⇒ <code>object</code> \| <code>string</code>~~
+  * ~~[.allThings(one, two)](#All#allThings) ⇒ <code>object</code> &#124; <code>string</code>~~
 
 <a name="new_All_new"></a>
 ### new All(input, [options])
@@ -89,8 +89,8 @@ var yeah = new Everything(true);
 ### all.topping : <code>string</code>
 the ingredients on top
 
-**Default**: <code>&quot;mud, lettuce&quot;</code>  
 **Kind**: instance property of <code>[All](#All)</code>  
+**Default**: <code>&quot;mud, lettuce&quot;</code>  
 **Since**: v1.0.0  
 <a name="All#size"></a>
 ### all.size
@@ -98,13 +98,13 @@ the general size
 
 **Kind**: instance property of <code>[All](#All)</code>  
 <a name="All#allThings"></a>
-### ~~all.allThings(one, two) ⇒ <code>object</code> \| <code>string</code>~~
+### ~~all.allThings(one, two) ⇒ <code>object</code> &#124; <code>string</code>~~
 ***Deprecated***
 
 This function has all tags set
 
 **Kind**: instance method of <code>[All](#All)</code>  
-**Returns**: <code>object</code> \| <code>string</code> - this return has several types  
+**Returns**: <code>object</code> &#124; <code>string</code> - this return has several types  
 **Since**: v0.10.28  
 **Author:** Lloyd <75pound@gmail.com>  
 
@@ -128,7 +128,7 @@ Set the magic number.
 | x | <code>[NumberLike](#NumberLike)</code> | The magic number. |
 
 <a name="NumberLike"></a>
-## NumberLike : <code>number</code> \| <code>string</code>
+## NumberLike : <code>number</code> &#124; <code>string</code>
 A number, or a string containing a number.
 
 **Kind**: global typedef  
