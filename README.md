@@ -1,12 +1,7 @@
 [![view on npm](http://img.shields.io/npm/v/grunt-jsdoc-to-markdown.svg)](https://www.npmjs.org/package/grunt-jsdoc-to-markdown)
 [![npm module downloads per month](http://img.shields.io/npm/dm/grunt-jsdoc-to-markdown.svg)](https://www.npmjs.org/package/grunt-jsdoc-to-markdown)
-[![Build Status](https://travis-ci.org/75lb/grunt-jsdoc-to-markdown.svg?branch=master)](https://travis-ci.org/75lb/grunt-jsdoc-to-markdown)
-[![Dependency Status](https://david-dm.org/75lb/grunt-jsdoc-to-markdown.svg)](https://david-dm.org/75lb/grunt-jsdoc-to-markdown)
-
-# New release preview!
-I am close to finishing the next version, so feedback is welcome at this point! See the [next](https://github.com/75lb/grunt-jsdoc-to-markdown/tree/next) branch for installation details..
-
-Anyway, back to the regular documentation:
+[![Build Status](https://travis-ci.org/jsdoc2md/grunt-jsdoc-to-markdown.svg?branch=next)](https://travis-ci.org/jsdoc2md/grunt-jsdoc-to-markdown)
+[![Dependency Status](https://david-dm.org/jsdoc2md/grunt-jsdoc-to-markdown.svg)](https://david-dm.org/jsdoc2md/grunt-jsdoc-to-markdown)
 
 # grunt-jsdoc-to-markdown
 A grunt plugin for [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown).
@@ -37,7 +32,7 @@ module.exports = function(grunt) {
             },
             withOptions: {
                 options: {
-                    index: true
+                    "no-gfm": true
                 },
                 src: "src/wardrobe.js",
                 dest: "api/with-index.md"

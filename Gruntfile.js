@@ -5,20 +5,20 @@ module.exports = function(grunt) {
         jsdoc2md: {
             oneOutputFile: {
                 src: "test/fixture/*.js",
-                dest: "tmp/docs.md"
+                dest: "test/output/docs.md"
             },
             separateOutputFiles: {
                 files: [
-                    { src: "test/fixture/class.js", dest: "tmp/class.md" },
-                    { src: "test/fixture/typedef.js", dest: "tmp/typedef.md" }
+                    { src: "test/fixture/class.js", dest: "test/output/class.md" },
+                    { src: "test/fixture/typedef.js", dest: "test/output/typedef.md" }
                 ]
             },
             withOptions: {
                 options: {
-                    index: true
+                    "no-gfm": true
                 },
                 src: "test/fixture/object.js",
-                dest: "tmp/with-index.md"
+                dest: "test/output/no-gfm.md"
             }
         }
     });
