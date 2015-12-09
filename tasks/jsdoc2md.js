@@ -1,6 +1,7 @@
 'use strict'
 var jsdoc2md = require('jsdoc-to-markdown')
-var mfs = require('more-fs')
+var fs = require('fs')
+var path = require('path')
 
 module.exports = function (grunt) {
   grunt.registerMultiTask('jsdoc2md', 'API documentation generator', function () {
@@ -25,8 +26,8 @@ module.exports = function (grunt) {
         monitor.done()
       })
 
-      /* dest directories will be created if they don't exist  */
-      renderStream.pipe(mfs.writeStream(outputPath))
+      grunt.file.mkdir(path.dirname(outputPath))
+      renderStream.pipe(fs.createWriteStream(outputPath))
     })
   })
 }

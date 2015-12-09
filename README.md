@@ -16,32 +16,31 @@ $ npm install grunt-jsdoc-to-markdown --save-dev
 Example `Gruntfile.js`:
 
 ```js
-"use strict";
-module.exports = function(grunt) {
+'use strict'
+module.exports = function (grunt) {
+  grunt.initConfig({
+    jsdoc2md: {
+      oneOutputFile: {
+        src: 'src/*.js',
+        dest: 'api/documentation.md'
+      },
+      separateOutputFilePerInput: {
+        files: [
+          { src: 'src/jacket.js', dest: 'api/jacket.md' },
+          { src: 'src/shirt.js', dest: 'api/shirt.md' }
+        ]
+      },
+      withOptions: {
+        options: {
+          'no-gfm': true
+        },
+        src: 'src/wardrobe.js',
+        dest: 'api/with-index.md'
+      }
+    }
+  })
 
-    grunt.initConfig({
-        jsdoc2md: {
-            oneOutputFile: {
-                src: "src/*.js",
-                dest: "api/documentation.md"
-            },
-            separateOutputFilePerInput: {
-                files: [
-                    { src: "src/jacket.js", dest: "api/jacket.md" },
-                    { src: "src/shirt.js", dest: "api/shirt.md" }
-                ]
-            },
-            withOptions: {
-                options: {
-                    "no-gfm": true
-                },
-                src: "src/wardrobe.js",
-                dest: "api/with-index.md"
-            }
-        }
-    });
-
-    grunt.loadNpmTasks("grunt-jsdoc-to-markdown");
-    grunt.registerTask("default", "jsdoc2md");
-};
+  grunt.loadNpmTasks('grunt-jsdoc-to-markdown')
+  grunt.registerTask('default', 'jsdoc2md')
+}
 ```
