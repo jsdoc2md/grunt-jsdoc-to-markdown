@@ -11,9 +11,9 @@ a class with all of the things
 
 * ~~[All](#All) ⇐ <code>Number</code>~~
   * [new All(input, [options])](#new_All_new)
-  * [.topping](#All#topping) : <code>string</code>
-  * [.size](#All#size)
-  * ~~[.allThings(one, two)](#All#allThings) ⇒ <code>object</code> &#124; <code>string</code>~~
+  * [.topping](#All+topping) : <code>string</code>
+  * [.size](#All+size)
+  * ~~[.allThings(one, two)](#All+allThings) ⇒ <code>object</code> &#124; <code>string</code>~~
 
 <a name="new_All_new"></a>
 ### new All(input, [options])
@@ -29,19 +29,19 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
-<a name="All#topping"></a>
+<a name="All+topping"></a>
 ### all.topping : <code>string</code>
 the ingredients on top
 
 **Kind**: instance property of <code>[All](#All)</code>  
 **Default**: <code>&quot;mud, lettuce&quot;</code>  
 **Since**: v1.0.0  
-<a name="All#size"></a>
+<a name="All+size"></a>
 ### all.size
 the general size
 
 **Kind**: instance property of <code>[All](#All)</code>  
-<a name="All#allThings"></a>
+<a name="All+allThings"></a>
 ### ~~all.allThings(one, two) ⇒ <code>object</code> &#124; <code>string</code>~~
 ***Deprecated***
 

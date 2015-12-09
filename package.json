@@ -4,6 +4,7 @@
   "version": "1.1.0",
   "description": "Markdown API documentation generator, good for Github projects",
   "repository": "https://github.com/jsdoc2md/grunt-jsdoc-to-markdown.git",
+  "license": "MIT",
   "keywords": [
     "gruntplugin"
   ],
@@ -14,7 +15,6 @@
     "grunt": "~0.4.5"
   },
   "scripts": {
-    "lint": "jshint tasks/*.js Gruntfile.js; echo",
     "test": "tape test/*.js"
   },
   "devDependencies": {

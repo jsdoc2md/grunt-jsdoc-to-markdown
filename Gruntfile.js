@@ -16,6 +16,7 @@ module.exports = function(grunt) {
             withOptions: {
                 options: {
                     "no-gfm": true
+
                 },
                 src: "test/fixture/object.js",
                 dest: "test/output/no-gfm.md"
@@ -24,5 +25,5 @@ module.exports = function(grunt) {
     });
 
     grunt.loadTasks("tasks");
-    grunt.registerTask("default", "jsdoc2md");  
+    grunt.registerTask("default", "jsdoc2md");
 };
