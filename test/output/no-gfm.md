@@ -38,5 +38,5 @@ a function
 
 **Example**  
 ```js
-allTogether(true);
+allTogether(true)
 ```

@@ -6,7 +6,7 @@ simple object export
 /**
 first property
 */
-exports.one = 1;
+exports.one = 1
 
 /**
 This property has all tags set
@@ -19,10 +19,10 @@ This property has all tags set
 @since v0.10.28
 @example
 ```js
-var allTogether = true;
+var allTogether = true
 ```
 */
-exports.two = 2;
+exports.two = 2
 
 /**
 a function
@@ -33,7 +33,7 @@ a function
 @returns {object | string} this return has several types
 @example
 ```js
-allTogether(true);
+allTogether(true)
 ```
 */
-exports.three = function(four, five){};
+exports.three = function (four, five) {}

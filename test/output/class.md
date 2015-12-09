@@ -27,7 +27,7 @@ the constructor description
 
 **Example**  
 ```js
-var yeah = new Everything(true);
+var yeah = new Everything(true)
 ```
 <a name="All+topping"></a>
 ### all.topping : <code>string</code>
@@ -59,5 +59,5 @@ This function has all tags set
 
 **Example**  
 ```js
-all.allTogether(true);
+all.allTogether(true)
 ```

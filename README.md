@@ -2,6 +2,7 @@
 [![npm module downloads per month](http://img.shields.io/npm/dm/grunt-jsdoc-to-markdown.svg)](https://www.npmjs.org/package/grunt-jsdoc-to-markdown)
 [![Build Status](https://travis-ci.org/jsdoc2md/grunt-jsdoc-to-markdown.svg?branch=next)](https://travis-ci.org/jsdoc2md/grunt-jsdoc-to-markdown)
 [![Dependency Status](https://david-dm.org/jsdoc2md/grunt-jsdoc-to-markdown.svg)](https://david-dm.org/jsdoc2md/grunt-jsdoc-to-markdown)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # grunt-jsdoc-to-markdown
 A grunt plugin for [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown).

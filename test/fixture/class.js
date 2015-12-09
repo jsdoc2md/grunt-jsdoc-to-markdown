@@ -10,22 +10,22 @@ the constructor description
 @extends {Number}
 @example
 ```js
-var yeah = new Everything(true);
+var yeah = new Everything(true)
 ```
 */
-function All(input, second){
-    /**
-    the ingredients on top
-    @default
-    @type {string}
-    @since v1.0.0
-    */
-    this.topping = "mud, lettuce";
-    
-    /**
-    the general size
-    */
-    this.size = "medium";
+function All (input, second) {
+  /**
+  the ingredients on top
+  @default
+  @type {string}
+  @since v1.0.0
+  */
+  this.topping = 'mud, lettuce'
+
+  /**
+  the general size
+  */
+  this.size = 'medium'
 }
 
 /**
@@ -38,8 +38,7 @@ This function has all tags set
 @returns {object | string} this return has several types
 @example
 ```js
-all.allTogether(true);
+all.allTogether(true)
 ```
 */
-All.prototype.allThings = function(one, two){}
-
+All.prototype.allThings = function (one, two) {}
