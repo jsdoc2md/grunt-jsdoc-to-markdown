@@ -5,29 +5,21 @@ var path = require('path')
 
 module.exports = function (grunt) {
   grunt.registerMultiTask('jsdoc2md', 'API documentation generator', function () {
-    var self = this
-    var done = this.async()
     var options = this.options()
-    var monitor = {
-      finished: 0,
-      done: function () {
-        this.finished++
-        if (this.finished === self.files.length) done()
-      }
-    }
+    var done = this.async()
 
-    this.files.forEach(function (file) {
+    var promises = this.files.map(function (file) {
       var outputPath = file.dest
-      options.src = file.src
-      var renderStream = jsdoc2md(options)
-      grunt.log.oklns('writing ' + outputPath)
-      renderStream.on('error', grunt.fail.fatal)
-      renderStream.on('end', function () {
-        monitor.done()
-      })
-
       grunt.file.mkdir(path.dirname(outputPath))
-      renderStream.pipe(fs.createWriteStream(outputPath))
+      options.files = file.src
+      grunt.log.oklns('writing ' + outputPath)
+      return jsdoc2md.render(options)
+        .then(function (output) {
+          fs.writeFileSync(outputPath, output)
+        })
+        .catch(grunt.fail.fatal)
     })
+
+    Promise.all(promises).then(done)
   })
 }
