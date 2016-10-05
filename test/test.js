@@ -5,7 +5,7 @@ var runner = new TestRunner()
 var a = require('core-assert')
 
 runner.test('run grunt', function () {
-  return new Promise((resolve, reject) => {
+  return new Promise(function (resolve, reject) {
     exec('grunt', function (err, stdout, stderr) {
       if (err) return reject(err)
 
