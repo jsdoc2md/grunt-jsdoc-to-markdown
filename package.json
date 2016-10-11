@@ -9,7 +9,7 @@
     "gruntplugin"
   ],
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.12.0"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0"
