@@ -5,7 +5,7 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # grunt-jsdoc-to-markdown
-A grunt plugin for [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+A grunt plugin for [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown). Accepts the same options as the [`render` method](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/docs/API.md#jsdoc2mdrenderoptions--promise).
 
 ## Install
 ```sh

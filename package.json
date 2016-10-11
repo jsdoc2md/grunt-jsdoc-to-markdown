@@ -21,9 +21,9 @@
     "core-assert": "^0.2.1",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
-    "test-runner": "^0.2.4"
+    "test-runner": "^0.2.5"
   },
   "dependencies": {
-    "jsdoc-to-markdown": "^2.0.0-alpha"
+    "jsdoc-to-markdown": "^2.0.0"
   }
 }
