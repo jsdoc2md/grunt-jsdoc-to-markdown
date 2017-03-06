@@ -47,4 +47,4 @@ module.exports = function (grunt) {
 
 * * *
 
-&copy; 2014-16 Lloyd Brookes <75pound@gmail.com>.
+&copy; 2014-17 Lloyd Brookes <75pound@gmail.com>.

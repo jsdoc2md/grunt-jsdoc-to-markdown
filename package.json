@@ -9,7 +9,7 @@
     "gruntplugin"
   ],
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=4"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0"
@@ -18,12 +18,11 @@
     "test": "test-runner test/*.js"
   },
   "devDependencies": {
-    "core-assert": "^0.2.1",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
-    "test-runner": "^0.2.5"
+    "test-runner": "^0.3.0"
   },
   "dependencies": {
-    "jsdoc-to-markdown": "^2.0.0"
+    "jsdoc-to-markdown": "^3.0.0"
   }
 }

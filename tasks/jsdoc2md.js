@@ -1,15 +1,15 @@
 'use strict'
-var jsdoc2md = require('jsdoc-to-markdown')
-var fs = require('fs')
-var path = require('path')
+const jsdoc2md = require('jsdoc-to-markdown')
+const fs = require('fs')
+const path = require('path')
 
 module.exports = function (grunt) {
   grunt.registerMultiTask('jsdoc2md', 'API documentation generator', function () {
-    var options = this.options()
-    var done = this.async()
+    const options = this.options()
+    const done = this.async()
 
-    var promises = this.files.map(function (file) {
-      var outputPath = file.dest
+    const promises = this.files.map(function (file) {
+      const outputPath = file.dest
       grunt.file.mkdir(path.dirname(outputPath))
       options.files = file.src
       grunt.log.oklns('writing ' + outputPath)
