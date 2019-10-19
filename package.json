@@ -1,7 +1,7 @@
 {
   "name": "grunt-jsdoc-to-markdown",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Markdown API documentation generator, good for Github projects",
   "repository": "https://github.com/jsdoc2md/grunt-jsdoc-to-markdown",
   "license": "MIT",
