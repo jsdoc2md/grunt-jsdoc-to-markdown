@@ -1,4 +1,3 @@
-'use strict'
 module.exports = function (grunt) {
   grunt.initConfig({
     jsdoc2md: {
