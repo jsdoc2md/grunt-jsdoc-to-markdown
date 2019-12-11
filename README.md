@@ -50,4 +50,6 @@ module.exports = function (grunt) {
 
 * * *
 
-&copy; 2014-19 Lloyd Brookes <75pound@gmail.com>.
+&copy; 2014-20 Lloyd Brookes \<75pound@gmail.com\>.
+
+Tested by [test-runner](https://github.com/test-runner-js/test-runner).

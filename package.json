@@ -20,10 +20,10 @@
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-cli": "^1.3.2",
-    "test-runner": "^0.6.0"
+    "test-runner": "^0.8.10"
   },
   "dependencies": {
-    "jsdoc-to-markdown": "^5.0.2"
+    "jsdoc-to-markdown": "^5.0.3"
   },
   "files": [
     "tasks"
