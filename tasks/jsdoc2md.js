@@ -6,7 +6,6 @@ module.exports = function (grunt) {
   grunt.registerMultiTask('jsdoc2md', 'API documentation generator', function () {
     const options = this.options()
     const done = this.async()
-
     const promises = this.files.map(function (file) {
       const outputPath = file.dest
       grunt.file.mkdir(path.dirname(outputPath))

@@ -13,7 +13,7 @@ tom.test('run grunt', function () {
       } else {
         const output = fs.readFileSync('tmp/output/class.md', 'utf8')
         a.ok(/a class with all of the things/.test(output))
-        resolve('ok')
+        resolve('class.md ok')
       }
     })
   })

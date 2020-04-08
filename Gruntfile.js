@@ -13,8 +13,8 @@ module.exports = function (grunt) {
       },
       withOptions: {
         options: {
-          'no-gfm': true
-
+          'no-gfm': true,
+          'no-cache': true
         },
         src: 'test/fixture/object.js',
         dest: 'tmp/output/no-gfm.md'
